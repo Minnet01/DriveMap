@@ -21,3 +21,7 @@ Thumbs.db
 # Artifacts
 *.apk
 *.aab
+
+Start-Service ssh-agent
+Start-Service ssh-agent.pub
+$null
