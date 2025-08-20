@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DriveMap</string>
+    <string name="maplibre_attribution">© OpenStreetMap contributors</string>
+</resources>

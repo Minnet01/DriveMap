@@ -1,0 +1,23 @@
+# Gradle/IDE
+.gradle/
+**/build/
+**/captures/
+**/.cxx/
+*.iml
+/.idea/
+
+# Local machine / config
+local.properties
+.DS_Store
+Thumbs.db
+*.log
+
+# Secrets & signing
+**/google-services.json
+*.jks
+*.keystore
+/drivemap-upload.jks
+
+# Artifacts
+*.apk
+*.aab
