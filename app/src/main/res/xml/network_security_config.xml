@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
     <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">tiles.drivemap.id</domain>
         <!-- Contoh domain; isi nanti saat backend siap
         <domain includeSubdomains="true">api.drivemap.example</domain>
         <domain includeSubdomains="true">tiles.drivemap.example</domain>

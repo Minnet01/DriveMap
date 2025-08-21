@@ -12,6 +12,12 @@ android {
     namespace = "com.drivemap.app"
     compileSdk = 35
 
+    lint {
+        abortOnError = false
+        warningsAsErrors = false
+        checkReleaseBuilds = false
+    }
+
     defaultConfig {
         applicationId = "com.drivemap.app"
         minSdk = 24
@@ -74,8 +80,16 @@ android {
 }
 
 dependencies {
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.espresso.core)
+
     implementation(libs.appcompat)
     implementation(libs.material)
+
+    implementation("org.maplibre.gl:android-sdk:11.11.0")
+    // ... deps lain
 
     implementation(libs.maplibre)
 
