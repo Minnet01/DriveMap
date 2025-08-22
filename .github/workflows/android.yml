@@ -2,8 +2,18 @@ name: Build AAB
 
 on:
   push:
+    branches: [ main, feature/** ]
+  pull_request:
     branches: [ main ]
   workflow_dispatch:
+
+# root-level (bukan di bawah `workflow_dispatch`)
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -46,3 +56,4 @@ jobs:
         with:
           name: mapping
           path: app/build/outputs/mapping/release/mapping.txt
+          if-no-files-found: ignore
