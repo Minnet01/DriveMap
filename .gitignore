@@ -25,3 +25,4 @@ Thumbs.db
 Start-Service ssh-agent
 Start-Service ssh-agent.pub
 $null
+secret-scan.json
